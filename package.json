@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "ts": "tsc -w",
-    "sass": "sass --watch src/styles:dist/styles"
+    "sass": "sass --watch --style=compressed src/styles:dist/styles"
   },
   "keywords": [],
   "author": "",
