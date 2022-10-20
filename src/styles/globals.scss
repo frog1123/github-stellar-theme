@@ -94,4 +94,15 @@ body > div.position-relative.js-header-wrapper > header {
 // navbar > pfp > menu
 body > div.position-relative.js-header-wrapper > header > div.Header-item.position-relative.mr-0.d-none.d-md-flex > details > details-menu {
   background-color: $gray !important;
+
+  // user signed in as
+  & > div > a > strong {
+    color: $lightaccent !important;
+  }
+
+  // links not purple
+  & > a,
+  & > div > a {
+    color: $white !important;
+  }
 }

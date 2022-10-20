@@ -1,0 +1,36 @@
+@import 'colors.scss';
+
+// background
+body > div.application-main > div {
+  background-color: $darkgray !important;
+}
+
+// side bar, loading state
+body > div.application-main > div > aside,
+body > div.application-main > div > aside > div > loading-context > div {
+  background-color: $gray !important;
+}
+
+// follwing > link
+#panel-1 > div:nth-child(1) > div > div > div > div > div.Box.p-3.mt-2 > div > div.f4.lh-condensed.text-bold.color-fg-default > a:hover {
+  color: $accent !important;
+}
+
+// follwing, for you (underline)
+#feed-original,
+#feed-next {
+  &::after {
+    background-color: $accent !important;
+  }
+}
+
+// TODO fix followers container and add other
+// for you (repo) containers
+#dashboard-feed-frame > article > div {
+  background-color: $gray !important;
+
+  // follower containers
+  & > div > article {
+    background-color: $gray !important;
+  }
+}
