@@ -1,0 +1,52 @@
+@import 'colors.scss';
+
+// file viewer hover
+#repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-main > div.Box.mb-3 > div.js-details-container.Details > div.Details-content--hidden-not-important.js-navigation-container.js-active-navigation-container.d-md-block > div.Box-row.Box-row--focus-gray.py-2.d-flex.position-relative.js-navigation-item.navigation-focus,
+#repo-content-pjax-container > div > div > div.Box.mb-3 > div.js-details-container.Details > div > div:hover {
+  background-color: $lightgray !important;
+}
+
+// file viwewer header
+#repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-main > div.Box.mb-3 > div.Box-header.position-relative,
+.Box-header {
+  background-color: $gray !important;
+}
+
+//
+#repo-content-pjax-container > div > div > div.Box.mb-3 > div.js-details-container.Details > div > div.Box-row.Box-row--focus-gray.p-0.d-flex.js-navigation-item.navigation-focus > div.flex-auto.min-width-0.col-md-2 {
+  background-color: $gray !important;
+
+  &:hover {
+    background-color: $lightgray !important;
+  }
+}
+
+// should not be purple [code, issues, pr, actions, projects...], [watch, fork, [star]], go to file,
+#repository-container-header > nav > ul > li > a,
+#repository-container-header > div.d-flex.flex-wrap.flex-justify-end.mb-3.px-3.px-md-4.px-lg-5 > ul > li > a,
+#repository-container-header > div.d-flex.flex-wrap.flex-justify-end.mb-3.px-3.px-md-4.px-lg-5 > ul > li > div > a {
+  color: $white !important;
+}
+
+// repo owner
+#repository-container-header > div.d-flex.flex-wrap.flex-justify-end.mb-3.px-3.px-md-4.px-lg-5 > div > div > span.author.flex-self-stretch > a {
+  color: $lightaccent !important;
+}
+
+// about (tags)
+#repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-sidebar > div > div.BorderGrid-row.hide-sm.hide-md > div > div:nth-child(5) > div > a {
+  background-color: $lightgray !important;
+
+  &:hover {
+    background-color: $lightaccent !important;
+  }
+}
+
+#repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-sidebar > div > div.BorderGrid-row.hide-sm.hide-md > div > div > a:hover {
+  color: $accent !important;
+}
+
+// repo header container
+#repository-container-header {
+  background-color: $darkgray !important;
+}

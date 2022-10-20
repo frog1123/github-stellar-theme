@@ -1,0 +1,16 @@
+@import 'colors.scss';
+
+.markdown-body img {
+  background-color: $gray !important;
+}
+
+// readme header
+#readme > div.d-flex.Box-header.border-bottom-0.flex-items-center.flex-justify-between.color-bg-default.rounded-top-2 {
+  background-color: $gray !important;
+}
+
+// tables
+.markdown-body table th,
+.markdown-body table td {
+  background-color: $darkgray !important;
+}

@@ -1,0 +1,88 @@
+@import 'colors.scss';
+
+// contribution year switcher
+#js-contribution-activity > div.d-none.d-lg-block > div.js-profile-timeline-year-list.color-bg-default.js-sticky.float-right.col-2.pl-5 > ul > li > a {
+  background-color: $accent !important;
+  color: $white !important;
+}
+
+// [overview, repositories, projects...](selected)
+body > div.application-main > main > div.mt-4.position-sticky.top-0.d-none.d-md-block.color-bg-default.width-full.border-bottom.color-border-muted > div > div > div.Layout-main > div > nav > a::after {
+  background-color: $accent !important;
+}
+
+.user-status-circle-badge {
+  background-color: $gray !important;
+  border: 1px solid $lightgray !important;
+}
+
+// user follow btn
+.btn {
+  background-color: $gray !important;
+
+  &:hover {
+    background-color: $lightgray !important;
+  }
+}
+
+// should not be purple [overview, repositories, projects...]
+body > div.application-main > main > div.mt-4.position-sticky.top-0.d-none.d-md-block.color-bg-default.width-full.border-bottom.color-border-muted > div > div > div.Layout-main > div > nav > a {
+  color: $white !important;
+}
+
+// contributions timeline
+#js-contribution-activity > div.d-none.d-lg-block > div.js-profile-timeline-year-list.color-bg-default.js-sticky.float-right.col-2.pl-5,
+#js-contribution-activity > div.contribution-activity-listing.float-left.col-12.col-lg-10 > div > h3 > span {
+  background-color: $darkgray !important;
+}
+
+// repos tags
+#user-repositories-list > ul > li:nth-child(2) > div.col-10.col-lg-9.d-inline-block > div.topics-row-container.d-inline-flex.flex-wrap.flex-items-center.f6.my-1 > a {
+  background-color: $lightgray !important;
+
+  &:hover {
+    background-color: $lightaccent !important;
+  }
+}
+
+// contributions activity bar
+#js-contribution-activity > div.contribution-activity-listing.float-left.col-12.col-lg-10 > div > div:nth-child(2) > div.TimelineItem-body > details > div > ul > li > div.col-3.flex-shrink-0 > div {
+  background-color: $gray !important;
+}
+
+// contribution graph
+body > div.application-main > main > div.container-xl.px-3.px-md-4.px-lg-5 > div > div.Layout-main > div:nth-child(2) > div > div.mt-4.position-relative > div.js-yearly-contributions > div > div > div > svg > g > g > rect {
+  fill: $gray !important;
+
+  &[data-level='1'] {
+    fill: $darkaccent !important;
+  }
+  &[data-level='2'] {
+    fill: $accent !important;
+  }
+  &[data-level='3'] {
+    fill: $lightaccent !important;
+  }
+  &[data-level='4'] {
+    fill: $extralightaccent !important;
+  }
+}
+
+// contribution graph > lessmore
+body > div.application-main > main > div.container-xl.px-3.px-md-4.px-lg-5 > div > div.Layout-main > div:nth-child(2) > div > div.mt-4.position-relative > div.js-yearly-contributions > div > div > div > div > div.float-right.color-fg-muted > svg {
+  &:nth-child(1) > rect {
+    fill: $gray !important;
+  }
+  &:nth-child(2) > rect {
+    fill: $darkaccent !important;
+  }
+  &:nth-child(3) > rect {
+    fill: $accent !important;
+  }
+  &:nth-child(4) > rect {
+    fill: $lightaccent !important;
+  }
+  &:nth-child(5) > rect {
+    fill: $extralightaccent !important;
+  }
+}

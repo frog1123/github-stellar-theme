@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "github stellar theme",
+  "author": "frog1123",
+  "description": "stellar theme for github",
+  "permissions": ["contextMenus", "activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*", "http://github.com/*"],
+      "js": ["dist/inject.js"],
+      "css": ["dist/styles/globals.css", "dist/styles/repo.css", "dist/styles/profile.css", "dist/styles/readme.css"]
+    }
+  ],
+  "icons": {
+    "16": "./assets/16.png",
+    "48": "./assets/48.png",
+    "128": "./assets/128.png"
+  }
+}

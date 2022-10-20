@@ -1,0 +1,18 @@
+{
+  "name": "github-stellar-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "ts": "tsc -w",
+    "sass": "sass --watch src/styles:dist/styles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.55.0",
+    "typescript": "^4.8.4"
+  }
+}
