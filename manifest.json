@@ -9,7 +9,7 @@
     {
       "matches": ["https://github.com/*", "http://github.com/*"],
       "js": ["dist/inject.js"],
-      "css": ["dist/styles/globals.css", "dist/styles/repo.css", "dist/styles/profile.css", "dist/styles/readme.css", "dist/styles/home.css"]
+      "css": ["dist/styles/globals.css", "dist/styles/repo.css", "dist/styles/profile.css", "dist/styles/readme.css", "dist/styles/home.css", "dist/styles/explore.css"]
     }
   ],
   "icons": {

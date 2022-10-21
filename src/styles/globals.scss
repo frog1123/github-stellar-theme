@@ -105,4 +105,14 @@ body > div.position-relative.js-header-wrapper > header > div.Header-item.positi
   & > div > a {
     color: $white !important;
   }
+
+  // hover
+  & > a,
+  & > div > a,
+  & > div > button,
+  & > form > button {
+    &:hover {
+      background-color: $lightaccent !important;
+    }
+  }
 }

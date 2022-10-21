@@ -50,3 +50,19 @@
 #repository-container-header {
   background-color: $darkgray !important;
 }
+
+// repo details saved notif
+.flash-full,
+.flash-banner {
+  background-color: $accenttransperant !important;
+  border-color: $accent !important;
+}
+
+.flash .octicon {
+  color: $white !important;
+}
+
+// settings hover
+#repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-sidebar > div > div.BorderGrid-row.hide-sm.hide-md > div > details > summary > div > svg:hover {
+  color: $accent !important;
+}

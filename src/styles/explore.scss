@@ -1,0 +1,31 @@
+@import 'colors.scss';
+
+// navbar
+body > div.application-main > main > div.site-subnav.color-bg-default.site-subnav-sticky.js-sticky {
+  background-color: $darkgray !important;
+}
+
+body > div.application-main > main > div.site-subnav.color-bg-default.site-subnav-sticky.js-sticky > nav > div > a {
+  color: $white !important;
+}
+
+// nav links selected (explore, topics, trending, colletions, events, github sponsors)
+body > div.application-main > main > div.site-subnav.color-bg-default.site-subnav-sticky.js-sticky > nav > div > a.js-selected-navigation-item.selected.d-inline-block.subnav-primary.f5.py-0.py-md-3.mt-2.mt-md-0.mr-0.mr-md-4.no-underline.subnav-link,
+body > div.application-main > main > div.site-subnav.color-bg-default.site-subnav-sticky.js-sticky > nav > div > a.js-selected-navigation-item.selected.d-inline-block.py-2.py-md-3.mr-3.mr-md-4.no-underline.subnav-link {
+  color: $lightaccent !important;
+}
+
+// profile side
+body > div.application-main > main > div:nth-child(2) > div > div > div.col-md-12.col-lg-3.position-md-relative.pt-4.pt-lg-0.mt-lg-n6 > div {
+  background-color: $gray !important;
+}
+
+// top containers
+body > div.application-main > main > div > div > div > div.col-md-8.col-lg-6.py-4 > div > article {
+  background-color: $gray !important;
+}
+
+// containers
+body > div.application-main > main > div > div > div > div.col-md-8.col-lg-6.py-4 > article {
+  background-color: $gray !important;
+}
