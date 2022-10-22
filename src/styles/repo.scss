@@ -33,8 +33,9 @@
   color: $lightaccent !important;
 }
 
-// about (tags)
-#repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-sidebar > div > div.BorderGrid-row.hide-sm.hide-md > div > div:nth-child(5) > div > a {
+// about (tags) second is for unsigned in
+#repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-sidebar > div > div.BorderGrid-row.hide-sm.hide-md > div > div:nth-child(5) > div > a,
+#repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-sidebar > div > div.BorderGrid-row.hide-sm.hide-md > div > div.my-3 > div > a {
   background-color: $lightgray !important;
 
   &:hover {
@@ -65,4 +66,9 @@
 // settings hover
 #repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-sidebar > div > div.BorderGrid-row.hide-sm.hide-md > div > details > summary > div > svg:hover {
   color: $accent !important;
+}
+
+// releases and packages (hover)
+#repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-sidebar > div > div > div > h2 > a:hover {
+  color: $lightaccent !important;
 }

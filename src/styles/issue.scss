@@ -1,0 +1,28 @@
+@import 'colors.scss';
+
+// create issue container
+#new_issue > div > div > div.Layout-main > div > div.timeline-comment.color-bg-default.hx_comment-box--tip,
+#new_issue > div > div > div.Layout-main > div > div.timeline-comment.color-bg-default.hx_comment-box--tip > div > div.mb-3.p-0.p-md-2.mb-md-0.rounded-top-2.color-bg-default,
+#new_issue > div > div > div.Layout-main > div > div.timeline-comment.color-bg-default.hx_comment-box--tip > div > tab-container > div.tabnav.comment-form-head.mb-2.d-flex.flex-justify-between.p-0.tabnav--responsive.flex-column.border-bottom-0.mb-0.mb-lg-2.flex-items-stretch.border-lg-bottom.color-border-default.flex-lg-items-center.flex-lg-row {
+  background-color: $gray !important;
+}
+
+// triangle thing
+#new_issue > div > div > div.Layout-main > div > div.timeline-comment.color-bg-default.hx_comment-box--tip::after {
+  background-color: $gray !important;
+  background-image: linear-gradient($gray, $gray) !important;
+}
+
+// issue: write, preview
+#new_issue > div > div > div.Layout-main > div > div.timeline-comment.color-bg-default.hx_comment-box--tip > div > tab-container > div.tabnav.comment-form-head.mb-2.d-flex.flex-justify-between.p-0.tabnav--responsive.flex-column.border-bottom-0.mb-0.mb-lg-2.flex-items-stretch.border-lg-bottom.color-border-default.flex-lg-items-center.flex-lg-row > div > button {
+  background-color: $gray !important;
+  margin-bottom: 1px !important;
+}
+
+// heading, bold, italic ...
+#new_issue > div > div > div.Layout-main > div > div.timeline-comment.color-bg-default.hx_comment-box--tip > div > tab-container > div.tabnav.comment-form-head.mb-2.d-flex.flex-justify-between.p-0.tabnav--responsive.flex-column.border-bottom-0.mb-0.mb-lg-2.flex-items-stretch.border-lg-bottom.color-border-default.flex-lg-items-center.flex-lg-row > markdown-toolbar > div.flex-nowrap.d-none.d-md-inline-block.mr-md-0.mr-3 *,
+#new_issue > div > div > div.Layout-main > div > div.timeline-comment.color-bg-default.hx_comment-box--tip > div > tab-container > div.tabnav.comment-form-head.mb-2.d-flex.flex-justify-between.p-0.tabnav--responsive.flex-column.border-bottom-0.mb-0.mb-lg-2.flex-items-stretch.border-lg-bottom.color-border-default.flex-lg-items-center.flex-lg-row > markdown-toolbar > div * {
+  &:hover {
+    color: $lightaccent !important;
+  }
+}
