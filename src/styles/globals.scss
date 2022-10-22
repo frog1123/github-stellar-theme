@@ -57,17 +57,27 @@ body > div.position-relative.js-header-wrapper > header > div > div.HeaderMenu--
   color: $white !important;
 }
 
-body > div.position-relative.js-header-wrapper > header > div > div.HeaderMenu--logged-out.p-responsive.height-fit.position-lg-relative.d-lg-flex.flex-column.flex-auto.pt-7.pb-4.top-0 > div > div > div.d-lg-flex.min-width-0.mb-2.mb-lg-0 > div > div > form > label {
+body > div.position-relative.js-header-wrapper > header > div > div.HeaderMenu--logged-out.p-responsive.height-fit.position-lg-relative.d-lg-flex.flex-column.flex-auto.pt-7.pb-4.top-0 > div > div > div.d-lg-flex.min-width-0.mb-2.mb-lg-0 > div {
   background-color: $lightgray !important;
 }
 
-// TODO fix later
 // search bar
-.header-search-wrapper,
-body > div.position-relative.js-header-wrapper > header > div > div.HeaderMenu--logged-out.p-responsive.height-fit.position-lg-relative.d-lg-flex.flex-column.flex-auto.pt-7.pb-4.top-0 > div > div > div.d-lg-flex.min-width-0.mb-2.mb-lg-0 > div > div > form > label > input.form-control.js-site-search-focus.header-search-input.jump-to-field.js-jump-to-field.js-site-search-field {
-  &:focus {
-    background-color: $gray !important;
-  }
+body > div.position-relative.js-header-wrapper > header > div > div.HeaderMenu--logged-out.p-responsive.height-fit.position-lg-relative.d-lg-flex.flex-column.flex-auto.pt-7.pb-4.top-0 > div > div > div.d-lg-flex.min-width-0.mb-2.mb-lg-0 > div > div > form {
+  background-color: $gray !important;
+}
+
+// search bar suggestions hover
+.jump-to-suggestions-results-container [aria-selected='true'] .jump-to-suggestions-path,
+.jump-to-suggestions-results-container .navigation-focus .jump-to-suggestions-path {
+  color: $white !important;
+  background: $lightaccent !important;
+}
+
+// in this repo, in this user, all github
+#jump-to-suggestion-search-scoped > a > div.border.rounded-2.flex-shrink-0.color-bg-subtle.px-1.color-fg-muted.ml-1.f6.js-jump-to-badge-search,
+#jump-to-suggestion-search-scoped-owner > a > div.border.rounded-2.flex-shrink-0.color-bg-subtle.px-1.color-fg-muted.ml-1.f6.js-jump-to-badge-search,
+#jump-to-suggestion-search-global > a > div.border.rounded-2.flex-shrink-0.color-bg-subtle.px-1.color-fg-muted.ml-1.f6.js-jump-to-badge-search {
+  background-color: $lightgray !important;
 }
 
 // navbar
@@ -118,7 +128,8 @@ body > div.position-relative.js-header-wrapper > header > div.Header-item.positi
 }
 
 // pullreqs, issues, marketplace, explore (hover)
-#global-nav > a {
+#global-nav > a,
+#global-nav > div > a {
   transition-duration: 250ms;
 
   &:hover {
@@ -126,46 +137,31 @@ body > div.position-relative.js-header-wrapper > header > div.Header-item.positi
   }
 }
 
-// pullreqs: created, assigned, mentioned, review requests
-#issues_dashboard > div.subnav.d-flex.mb-3.flex-column.flex-md-row > nav > a {
-  color: $white !important;
+// search bar
+.subnav-search-input {
+  width: 320px;
+  padding-left: 32px;
 
-  &.js-selected-navigation-item.selected.subnav-item.flex-1.text-center {
+  &::selection {
+    color: $white !important;
+  }
+}
+
+// also search bar
+.form-control {
+  background-color: $gray !important;
+
+  &:focus-visible {
     border-color: $accent !important;
-    background-color: $lightaccent !important;
   }
 }
 
-// pullreqs: open, closed
-#js-issues-toolbar > div.Box-header.d-flex.flex-justify-between > div.table-list-filters.flex-auto.d-none.d-md-block.no-wrap > div > a {
-  color: $white !important;
-
-  &.btn-link.selected {
-    color: $lightaccent !important;
-  }
+.upload-enabled.focused {
+  border-color: $accent !important;
+  box-shadow: 0 0 0 2px $accent !important;
 }
 
-// pullreqs > closed
-#js-issues-toolbar > div.js-navigation-container.js-active-navigation-container > div {
-  // unread bar
-  &.Box-row--unread {
-    box-shadow: 2px 0 0 $accent inset !important;
-  }
-
-  &:hover {
-    background-color: $lightgray !important;
-  }
-
-  &.navigation-focus {
-    background-color: $lightgray !important;
-  }
-
-  // hovers
-  & > div > div > span > a,
-  & > div > div > a,
-  & > div > div > div > span > a {
-    &:hover {
-      color: $lightaccent !important;
-    }
-  }
+// popup thing
+.SelectMenu-list {
+  background-color: $gray !important;
 }

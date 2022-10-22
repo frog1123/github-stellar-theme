@@ -26,3 +26,13 @@
     color: $lightaccent !important;
   }
 }
+
+// assignees, labels, projects, milestone (hover)
+#assignees-select-menu,
+#labels-select-menu,
+#projects-select-menu,
+#milestone-select-menu {
+  & > summary:hover {
+    color: $lightaccent !important;
+  }
+}

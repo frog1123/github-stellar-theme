@@ -86,3 +86,10 @@ body > div.application-main > main > div.container-xl.px-3.px-md-4.px-lg-5 > div
     fill: $extralightaccent !important;
   }
 }
+
+// user repo tags (hover)
+#user-repositories-list > ul > li > div.col-10.col-lg-9.d-inline-block > div.topics-row-container.d-inline-flex.flex-wrap.flex-items-center.f6.my-1 > a {
+  &:hover {
+    background-color: $lightaccent !important;
+  }
+}

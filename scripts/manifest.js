@@ -2,7 +2,7 @@ const { writeFileSync } = require('fs');
 const { join } = require('path');
 const chalk = require('chalk');
 
-const css = ['styles/repo.css', 'styles/profile.css', 'styles/readme.css', 'styles/home.css', 'styles/explore.css', 'styles/issue.css', 'styles/globals.css'];
+const css = ['styles/repo.css', 'styles/profile.css', 'styles/readme.css', 'styles/home.css', 'styles/explore.css', 'styles/issue.css', 'styles/pullreqs.css', 'styles/globals.css'];
 const js = ['inject.js'];
 
 const createManifest = async ({ js, css }) => {

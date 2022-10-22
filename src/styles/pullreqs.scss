@@ -1,0 +1,45 @@
+@import 'colors.scss';
+
+// pullreqs: created, assigned, mentioned, review requests
+#issues_dashboard > div.subnav.d-flex.mb-3.flex-column.flex-md-row > nav > a {
+  color: $white !important;
+
+  &.js-selected-navigation-item.selected.subnav-item.flex-1.text-center {
+    border-color: $accent !important;
+    background-color: $lightaccent !important;
+  }
+}
+
+// pullreqs: open, closed
+#js-issues-toolbar > div.Box-header.d-flex.flex-justify-between > div.table-list-filters.flex-auto.d-none.d-md-block.no-wrap > div > a {
+  color: $white !important;
+
+  &.btn-link.selected {
+    color: $lightaccent !important;
+  }
+}
+
+// pullreqs > closed
+#js-issues-toolbar > div.js-navigation-container.js-active-navigation-container > div {
+  // unread bar
+  &.Box-row--unread {
+    box-shadow: 2px 0 0 $accent inset !important;
+  }
+
+  &:hover {
+    background-color: $lightgray !important;
+  }
+
+  &.navigation-focus {
+    background-color: $lightgray !important;
+  }
+
+  // hovers
+  & > div > div > span > a,
+  & > div > div > a,
+  & > div > div > div > span > a {
+    &:hover {
+      color: $lightaccent !important;
+    }
+  }
+}
