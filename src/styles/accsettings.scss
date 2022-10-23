@@ -1,0 +1,52 @@
+@import 'colors.scss';
+
+// switch to another account
+body > div.application-main > main > div > div.d-md-flex.flex-items-center.flex-justify-between.mt-1.mb-4 > div > div > div > details > summary {
+  color: $accent !important;
+
+  &:hover {
+    color: $lightaccent !important;
+  }
+}
+
+// selected tab sidebar
+li.ActionListItem--navActive::after {
+  background: $accent !important;
+}
+
+// edit pfp
+body > div.application-main > main > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-start.Layout--sidebarPosition-flowRow-start > div.Layout-main > div > div > div.clearfix.gutter.d-flex.flex-shrink-0.flex-column-reverse.flex-md-row > div.col-12.col-md-4 > dl > dd > div > details > summary > div {
+  background-color: $gray !important;
+
+  &:hover {
+    background-color: $lightgray !important;
+  }
+}
+
+// fancy checkmark
+body > div.application-main > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-start.Layout--sidebarPosition-flowRow-start > div.Layout-main > div > div > react-app > div > div > div.Box-sc-1gh2r6s-0.UeKPB > div > div.Box-sc-1gh2r6s-0.jqoCZx > button {
+  &[aria-checked='true'] {
+    background-color: $lightaccent !important;
+    border-color: $gray !important;
+
+    & > div {
+      background-color: $accent !important;
+      border-color: $gray !important;
+    }
+
+    & > div > div {
+      color: $extralightaccent !important;
+    }
+  }
+}
+
+// billing and plans
+body > div.application-main > main > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-start.Layout--sidebarPosition-flowRow-start > div.Layout-main > div > div > div.d-flex.flex-column.flex-md-row.mb-4 > div {
+  background-color: $gray !important;
+}
+
+// github copilot
+body > div.application-main > main > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-start.Layout--sidebarPosition-flowRow-start > div.Layout-main > div > div > div:nth-child(2) > div > ul > li {
+  background-color: $gray !important;
+  margin-top: 2px !important;
+}

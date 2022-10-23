@@ -1,0 +1,35 @@
+@import 'colors.scss';
+
+// sidebar
+#js-repo-pjax-container > div > div.d-none.d-md-flex.col-12.col-sm-12.col-md-3.col-lg-2.col-xl-2.flex-shrink-0.flex-grow-0 > nav {
+  background-color: $gray !important;
+
+  & > ul > li > a,
+  & > div > ul > li > a {
+    color: $white !important;
+
+    &:not(.selected):hover {
+      background-color: $lightgray !important;
+    }
+  }
+}
+
+// navbar selected
+.filter-item.selected {
+  background-color: $accent !important;
+}
+
+// TODO make side check nonotif bookmark better
+#js-repo-pjax-container > div > div.col-12.col-sm-12.col-md-9.col-lg-10.col-xl-10 > div > div.Box.mx-0.mt-0.mb-3.notifications-list.js-notifications-list > div.Box-body.p-0 > ul li {
+  background-color: $gray !important;
+  border: 0 2px 0 0 $lightaccent !important;
+
+  &:hover {
+    background-color: $lightgray !important;
+  }
+
+  // unread icon
+  & > div > div.d-flex.flex-row.flex-md-1 > div > div {
+    background-color: $lightaccent !important;
+  }
+}

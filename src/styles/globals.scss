@@ -175,3 +175,21 @@ input[type='checkbox'] {
     accent-color: $accent !important;
   }
 }
+
+.btn-primary {
+  color: $white !important;
+  background-color: $accent !important;
+}
+
+// should not be purple (search bar signed in)
+#jump-to-results > li > a {
+  color: $white !important;
+}
+
+input {
+  outline-color: $accent !important;
+}
+
+.form-select {
+  background-color: $gray !important;
+}
