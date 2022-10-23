@@ -165,3 +165,13 @@ body > div.position-relative.js-header-wrapper > header > div.Header-item.positi
 .SelectMenu-list {
   background-color: $gray !important;
 }
+
+input[type='checkbox'] {
+  &:active {
+    accent-color: $white !important;
+  }
+
+  &:checked {
+    accent-color: $accent !important;
+  }
+}
