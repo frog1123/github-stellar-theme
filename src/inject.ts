@@ -25,7 +25,8 @@ const addImgToNavbar = () => {
   const img = document.createElement('img');
   const imgSrc = document.createAttribute('src');
   const imgClass = document.createAttribute('class');
-  imgSrc.value = 'https://64.media.tumblr.com/20f5bc14a8b7c9988b76885b365de179/tumblr_mnsouvSpVD1qjdyzdo2_500.gifv';
+  // ? no img for now cuz content security policy
+  imgSrc.value = '';
   imgClass.value = 'stellar-injected-navbar-img-class';
   img.setAttributeNode(imgSrc);
   img.setAttributeNode(imgClass);
