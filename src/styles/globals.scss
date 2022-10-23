@@ -105,11 +105,6 @@ body > div.position-relative.js-header-wrapper > header {
 body > div.position-relative.js-header-wrapper > header > div.Header-item.position-relative.mr-0.d-none.d-md-flex > details > details-menu {
   background-color: $gray !important;
 
-  // user signed in as
-  & > div > a > strong {
-    color: $lightaccent !important;
-  }
-
   // links not purple
   & > a,
   & > div > a {
@@ -123,6 +118,7 @@ body > div.position-relative.js-header-wrapper > header > div.Header-item.positi
   & > form > button {
     &:hover {
       background-color: $lightaccent !important;
+      color: $white !important;
     }
   }
 }
@@ -192,4 +188,44 @@ input {
 
 .form-select {
   background-color: $gray !important;
+}
+
+// navbar img container
+.stellar-injected-navbar-img-wrapper-class {
+  width: 60%;
+  display: grid;
+  place-items: center;
+}
+
+// navbar img
+.stellar-injected-navbar-img-class {
+  max-height: 40px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  object-fit: cover;
+  user-select: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .stellar-injected-navbar-img-class {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .stellar-injected-navbar-img-class {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .stellar-injected-navbar-img-class {
+    max-width: 180px;
+  }
+}
+
+body > div.position-relative.js-header-wrapper > header {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }

@@ -93,3 +93,8 @@ body > div.application-main > main > div.container-xl.px-3.px-md-4.px-lg-5 > div
     background-color: $lightaccent !important;
   }
 }
+
+// smaller screen size (overview, repos, projects...)
+body > div.application-main > main > div.container-xl.px-3.px-md-4.px-lg-5 > div > div.Layout-main > div.UnderlineNav.user-profile-nav.d-block.d-md-none.position-sticky.top-0.pl-3.ml-n3.mr-n3.pr-3.color-bg-default {
+  background-color: $darkgray !important;
+}

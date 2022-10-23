@@ -36,3 +36,57 @@
     color: $lightaccent !important;
   }
 }
+
+// issue thread header
+#partial-discussion-header {
+  background-color: $darkgray !important;
+}
+
+// issue thread container header
+div > div.timeline-comment-header.clearfix.d-flex {
+  background-color: $gray !important;
+}
+
+// issue thread container content, second is reactions
+div > div.edit-comment-hide > task-lists > table > tbody > tr > td,
+div > div.edit-comment-hide > div {
+  background-color: $gray !important;
+}
+
+// issue thread code blocks
+div > div.edit-comment-hide > task-lists > table > tbody > tr > td > div > pre,
+div > div.edit-comment-hide > task-lists > table > tbody > tr > td > p > code {
+  background-color: $lightgray !important;
+}
+
+// issue thread sticky thing
+#partial-discussion-header > div.gh-header-shadow.color-shadow-small.js-notification-shelf-offset-top {
+  background-color: $darkgray !important;
+}
+
+// issue thread comment box (bottom) (bg)
+#discussion_bucket > div > div.Layout-main > div > div.discussion-timeline-actions {
+  background-color: $darkgray !important;
+}
+
+// issue thread comment box container
+#issuecomment-new > div.border-0.border-md.timeline-comment.timeline-comment--caret > form > fieldset > tab-container > div.tabnav.comment-form-head.mb-2.d-flex.flex-justify-between.p-0.tabnav--responsive.flex-column.border-bottom-0.mb-0.mb-lg-2.flex-items-stretch.border-lg-bottom.color-border-default.flex-lg-items-center.flex-lg-row,
+#issuecomment-new > div.border-0.border-md.timeline-comment.timeline-comment--caret > form > fieldset > tab-container,
+#issuecomment-new > div.border-0.border-md.timeline-comment.timeline-comment--caret {
+  background-color: $gray !important;
+}
+
+// issue thread comment write, preview
+#issuecomment-new > div.border-0.border-md.timeline-comment.timeline-comment--caret > form > fieldset > tab-container > div.tabnav.comment-form-head.mb-2.d-flex.flex-justify-between.p-0.tabnav--responsive.flex-column.border-bottom-0.mb-0.mb-lg-2.flex-items-stretch.border-lg-bottom.color-border-default.flex-lg-items-center.flex-lg-row > div > button.btn-link.tabnav-tab.write-tab.js-write-tab.px-3.px-sm-6.px-md-3.flex-1.flex-md-auto,
+#issuecomment-new > div.border-0.border-md.timeline-comment.timeline-comment--caret > form > fieldset > tab-container > div.tabnav.comment-form-head.mb-2.d-flex.flex-justify-between.p-0.tabnav--responsive.flex-column.border-bottom-0.mb-0.mb-lg-2.flex-items-stretch.border-lg-bottom.color-border-default.flex-lg-items-center.flex-lg-row > div > button.btn-link.tabnav-tab.preview-tab.js-preview-tab.flex-1.flex-md-auto {
+  background-color: $gray !important;
+  margin-bottom: 1px !important;
+}
+
+// issue thread comment triangle thing
+#issuecomment-new > div.border-0.border-md.timeline-comment.timeline-comment--caret::after {
+  background-color: $gray !important;
+  background-image: linear-gradient($gray, $gray) !important;
+}
+
+// TODO change hover colors of stuff

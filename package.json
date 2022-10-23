@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run ts && npm run sass && npm run manifest && npm run icons",
+    "build": "npm run ts && npm run sass && npm run manifest && npm run icons && npm run popup",
     "ts:w": "tsc -w",
     "sass:w": "sass --watch --style=compressed --no-source-map src/styles:dist/styles",
     "ts": "tsc",
     "sass": "sass --style=compressed --no-source-map src/styles:dist/styles",
     "manifest": "node scripts/manifest.js",
-    "icons": "node scripts/icons.js"
+    "icons": "node scripts/icons.js",
+    "popup": "node scripts/popup.js"
   },
   "keywords": [],
   "author": "",

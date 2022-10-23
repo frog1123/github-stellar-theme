@@ -1,8 +1,24 @@
 @import 'colors.scss';
 
-// file viewer hover
+// file viewer (hover)
 #repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-main > div.Box.mb-3 > div.js-details-container.Details > div.Details-content--hidden-not-important.js-navigation-container.js-active-navigation-container.d-md-block > div.Box-row.Box-row--focus-gray.py-2.d-flex.position-relative.js-navigation-item.navigation-focus,
-#repo-content-pjax-container > div > div > div.Box.mb-3 > div.js-details-container.Details > div > div:hover {
+#repo-content-pjax-container > div > div > div.Box.mb-3 > div.js-details-container.Details > div > div:hover,
+#repo-content-turbo-frame > div > div > div.Box.mb-3 > div.js-details-container.Details > div > div.Box-row.Box-row--focus-gray.py-2.d-flex.position-relative.js-navigation-item:hover {
+  background-color: $lightgray !important;
+}
+
+// file view file/folder (hover)
+// first is main, second is sub, third is sub sub
+#repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-main > div.Box.mb-3 > div.js-details-container.Details > div.Details-content--hidden-not-important.js-navigation-container.js-active-navigation-container.d-md-block > div > div.flex-auto.min-width-0.col-md-2.mr-3 > span > a,
+#repo-content-pjax-container > div > div > div.Box.mb-3 > div.js-details-container.Details > div > div > div.flex-auto.min-width-0.col-md-2.mr-3 > span > a,
+#repo-content-turbo-frame > div > div > div.Box.mb-3 > div.js-details-container.Details > div > div > div.flex-auto.min-width-0.col-md-2.mr-3 > span > a {
+  &:hover {
+    color: $lightaccent !important;
+  }
+}
+
+// file view: out of hover (focus) remain
+#repo-content-pjax-container > div > div > div.Box.mb-3 > div.js-details-container.Details > div > div.Box-row.Box-row--focus-gray.py-2.d-flex.position-relative.js-navigation-item.navigation-focus {
   background-color: $lightgray !important;
 }
 
@@ -88,6 +104,29 @@
 }
 
 #repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-sidebar > div > div:nth-child(6) > div > ul > li > a {
+  &:hover {
+    color: $lightaccent !important;
+  }
+}
+
+// commit header message (hover) and dropdown hover
+#repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-main > div.Box.mb-3 > div.Box-header.position-relative > div > div.flex-1.d-flex.flex-items-center.ml-3.min-width-0 > div.css-truncate.css-truncate-overflow.color-fg-muted > span > a,
+#repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-main > div.Box.mb-3 > div.Box-header.position-relative > div > div.pl-0.pl-md-5.flex-order-1.width-full.Details-content--hidden > div.mt-2 > a {
+  &:hover {
+    color: $lightaccent !important;
+  }
+}
+
+// header ...
+#repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-main > div.Box.mb-3 > div.Box-header.position-relative > div > div.flex-1.d-flex.flex-items-center.ml-3.min-width-0 > span > button {
+  &:hover {
+    background-color: $lightgray !important;
+  }
+}
+
+// commit, time ago, commit amount (hover)
+#repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-main > div.Box.mb-3 > div.Box-header.position-relative > div > div.flex-1.d-flex.flex-items-center.ml-3.min-width-0 > div.d-flex.flex-auto.flex-justify-end.ml-3.flex-items-baseline > a,
+#repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-main > div.Box.mb-3 > div.Box-header.position-relative > div > div:nth-child(4) > ul > li > a {
   &:hover {
     color: $lightaccent !important;
   }

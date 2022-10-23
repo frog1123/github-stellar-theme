@@ -14,3 +14,23 @@ tested on
 colors are in COLORS.md
 
 colors can be changes src/styles/colors.scss
+
+commands
+
+---
+
+build
+
+`npm run build`
+
+typescript watch
+
+`npm run ts:w`
+
+sass watch
+
+`npm run sass:w`
+
+generate manifest
+
+`npm run manifest`

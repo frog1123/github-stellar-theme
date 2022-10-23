@@ -1,0 +1,66 @@
+@import 'colors.scss';
+
+// showing x changed files | split unified
+#repo-content-pjax-container > div > diff-layout > div.pr-toolbar.commit-toolbar.mt-n2.color-bg-default.d-flex {
+  background-color: $darkgray !important;
+}
+
+// user commited x days ago (bottom)
+#repo-content-pjax-container > div > div.commit.full-commit.mt-0.px-2.pt-2 > div.commit-meta.p-2.d-flex.flex-wrap {
+  background-color: $gray !important;
+}
+
+#repo-content-pjax-container > div > div.commit.full-commit.mt-0.px-2.pt-2 > a {
+  color: $white !important;
+  transition-duration: 250ms;
+
+  &:hover {
+    color: $lightaccent !important;
+  }
+}
+
+// ... (hover)
+#repo-content-pjax-container > div > div.commit.full-commit.mt-0.px-2.pt-2 > div.commit-branches.pb-2 > ul > li.abbrev-tags > span > button {
+  &:hover {
+    background-color: $lightgray !important;
+  }
+}
+
+// should not be purple: branch, tags
+#repo-content-pjax-container > div > div.commit.full-commit.mt-0.px-2.pt-2 > div.commit-branches.pb-2 > div > ul > li.branch > a,
+#repo-content-pjax-container > div > div.commit.full-commit.mt-0.px-2.pt-2 > div.commit-branches.pb-2 > ul > li > a {
+  color: $white !important;
+}
+
+// file header
+div.file-header.d-flex.flex-md-row.flex-column.flex-md-items-center.file-header--expandable.js-file-header {
+  background-color: $gray !important;
+}
+
+// fileheader v
+// showhide, filename, copy,
+div.file-header.d-flex.flex-md-row.flex-column.flex-md-items-center.file-header--expandable.js-file-header.js-skip-tagsearch > div.file-info.flex-auto.min-width-0.mb-md-0.mb-2 > button,
+div.file-header.d-flex.flex-md-row.flex-column.flex-md-items-center.file-header--expandable.js-file-header.js-skip-tagsearch > div.file-info.flex-auto.min-width-0.mb-md-0.mb-2 > span.Truncate > a,
+div.file-header.d-flex.flex-md-row.flex-column.flex-md-items-center.file-header--expandable.js-file-header.js-skip-tagsearch > div.file-info.flex-auto.min-width-0.mb-md-0.mb-2 > span.Truncate > clipboard-copy,
+div.file-header.d-flex.flex-md-row.flex-column.flex-md-items-center.file-header--expandable.js-file-header.js-skip-tagsearch > div.file-actions.pt-0.mb-md-0.mb-2.ml-md-2.flex-shrink-0.flex-md-justify-end > div > details > summary > div {
+  &:hover {
+    color: $lightaccent !important;
+  }
+}
+
+// + symbol line
+.add-line-comment {
+  background-color: $accent !important;
+}
+
+// add comment
+div.js-file-content.Details-content--hidden.position-relative > div > table > tbody > tr.inline-comments.js-skip-tagsearch.js-inline-comments-container > td > div > div.inline-comment-form-container.js-inline-comment-form-container.review-comment-form-container.open > div.inline-comment-form-box.inline-comment-form.border-md.border-0.p-md-0.p-2 > form > tab-container > div.tabnav.comment-form-head.mb-2.d-flex.flex-justify-between.p-0.tabnav--responsive.flex-column.border-bottom-0.mb-0.mb-lg-2.flex-items-stretch.border-lg-bottom.color-border-default.flex-lg-items-center.flex-lg-row {
+  background-color: $gray !important;
+}
+
+// write, preview
+div.js-file-content.Details-content--hidden.position-relative > div > table > tbody > tr.inline-comments.js-skip-tagsearch.js-inline-comments-container > td > div > div.inline-comment-form-container.js-inline-comment-form-container.review-comment-form-container.open > div.inline-comment-form-box.inline-comment-form.border-md.border-0.p-md-0.p-2 > form > tab-container > div.tabnav.comment-form-head.mb-2.d-flex.flex-justify-between.p-0.tabnav--responsive.flex-column.border-bottom-0.mb-0.mb-lg-2.flex-items-stretch.border-lg-bottom.color-border-default.flex-lg-items-center.flex-lg-row > div > button.btn-link.tabnav-tab.write-tab.js-write-tab.px-3.px-sm-6.px-md-3.flex-1.flex-md-auto,
+#diff-639342684bbeb10c69025914823632cfdcfda48c0021fb12bbd66b31e0557e4b > div.js-file-content.Details-content--hidden.position-relative > div > table > tbody > tr.inline-comments.js-skip-tagsearch.js-inline-comments-container > td > div > div.inline-comment-form-container.js-inline-comment-form-container.review-comment-form-container.open > div.inline-comment-form-box.inline-comment-form.border-md.border-0.p-md-0.p-2 > form > tab-container > div.tabnav.comment-form-head.mb-2.d-flex.flex-justify-between.p-0.tabnav--responsive.flex-column.border-bottom-0.mb-0.mb-lg-2.flex-items-stretch.border-lg-bottom.color-border-default.flex-lg-items-center.flex-lg-row > div > button.btn-link.tabnav-tab.preview-tab.js-preview-tab.flex-1.flex-md-auto {
+  background-color: $gray !important;
+  margin-bottom: 1px !important;
+}
