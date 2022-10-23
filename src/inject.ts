@@ -1,12 +1,19 @@
 console.log('%c 🪐| stellar theme injected', 'color: #9335f2');
 
-const readmeCode = document.querySelectorAll('#readme > div.Box-body.px-5.pb-5 > article > div > pre');
+const readmeCode1 = document.querySelectorAll('#readme > div.Box-body.px-5.pb-5 > article > div > pre');
+const readmeCode2 = document.querySelectorAll('#readme > div.Box-body.px-5.pb-5 > article > p > code');
 
 // highlight readme code stuff
-for (let i = 0; i < readmeCode.length; i++) {
-  const firstWord = readmeCode[i].textContent?.split(' ').shift();
-  readmeCode[i].innerHTML = `<span class="stellar-injected-readme-code-syntax-highlight">${firstWord}</span>${readmeCode[i].textContent?.split('').slice(firstWord?.length).join('')}`;
-}
+
+const addSyntaxHighlightReadMeCode = (els: NodeListOf<Element>) => {
+  for (let i = 0; i < els.length; i++) {
+    const firstWord = els[i].textContent?.split(' ').shift();
+    els[i].innerHTML = `<span class="stellar-injected-readme-code-syntax-highlight">${firstWord}</span>${els[i].textContent?.split('').slice(firstWord?.length).join('')}`;
+  }
+};
+
+addSyntaxHighlightReadMeCode(readmeCode1);
+addSyntaxHighlightReadMeCode(readmeCode2);
 
 const addImgToNavbar = () => {
   const navBar = document.querySelector('body > div.position-relative.js-header-wrapper > header > div.Header-item.Header-item--full.flex-column.flex-md-row.width-full.flex-order-2.flex-md-order-none.mr-0.mt-3.mt-md-0.Details-content--hidden-not-important.d-md-flex');
