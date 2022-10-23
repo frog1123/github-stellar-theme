@@ -14,3 +14,35 @@
 .markdown-body table td {
   background-color: $darkgray !important;
 }
+
+// special readme
+#readme > div.d-flex.js-sticky.js-position-sticky.top-0.border-top-0.border-bottom.p-2.flex-items-center.flex-justify-between.color-bg-default.rounded-top-2 {
+  background-color: $gray !important;
+}
+
+// special readme popup
+#readme > div.d-flex.js-sticky.js-position-sticky.top-0.border-top-0.border-bottom.p-2.flex-items-center.flex-justify-between.color-bg-default.rounded-top-2 > div > details > details-menu > div > div > a {
+  background-color: $lightgray !important;
+
+  &:hover {
+    background-color: $lightaccent !important;
+    color: $white !important;
+  }
+}
+
+// pre > code ``
+#readme > div.Box-body.px-5.pb-5 > article > div > pre {
+  background-color: $lightgray !important;
+
+  &::selection {
+    color: $white !important;
+  }
+}
+
+.stellar-injected-readme-code-syntax-highlight {
+  color: $lightaccent !important;
+
+  &::selection {
+    color: $white !important;
+  }
+}

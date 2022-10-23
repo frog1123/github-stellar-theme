@@ -37,6 +37,7 @@
 #repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-sidebar > div > div.BorderGrid-row.hide-sm.hide-md > div > div:nth-child(5) > div > a,
 #repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-sidebar > div > div.BorderGrid-row.hide-sm.hide-md > div > div.my-3 > div > a {
   background-color: $lightgray !important;
+  transition: 250ms;
 
   &:hover {
     background-color: $lightaccent !important;
@@ -71,4 +72,23 @@
 // releases and packages (hover)
 #repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-sidebar > div > div > div > h2 > a:hover {
   color: $lightaccent !important;
+}
+
+// releases (hover)
+#repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-sidebar > div > div:nth-child(2) > div > a {
+  &:hover {
+    color: $lightaccent !important;
+  }
+}
+
+#repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-sidebar > div > div:nth-child(5) > div > ul > li > span > a {
+  &:hover {
+    color: $lightaccent !important;
+  }
+}
+
+#repo-content-pjax-container > div > div > div.Layout.Layout--flowRow-until-md.Layout--sidebarPosition-end.Layout--sidebarPosition-flowRow-end > div.Layout-sidebar > div > div:nth-child(6) > div > ul > li > a {
+  &:hover {
+    color: $lightaccent !important;
+  }
 }
