@@ -6,7 +6,7 @@ const contentScripts = [
   {
     matches: ['https://github.com/*', 'http://github.com/*'],
     js: ['inject.js'],
-    css: ['styles/home.css', 'styles/repo.css', 'styles/profile.css', 'styles/readme.css', 'styles/explore.css', 'styles/issue.css', 'styles/pullreqs.css', 'styles/notifications.css', 'styles/accsettings.css', 'styles/commit.css']
+    css: ['styles/home.css', 'styles/repo.css', 'styles/profile.css', 'styles/readme.css', 'styles/explore.css', 'styles/issue.css', 'styles/pullreqs.css', 'styles/notifications.css', 'styles/accsettings.css', 'styles/commit.css', 'styles/globals.css']
   }
 ];
 
