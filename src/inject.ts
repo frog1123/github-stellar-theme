@@ -8,12 +8,20 @@ const readmeCode2 = document.querySelectorAll('#readme > div.Box-body.px-5.pb-5 
 const addSyntaxHighlightReadMeCode = (els: NodeListOf<Element>) => {
   for (let i = 0; i < els.length; i++) {
     const firstWord = els[i].textContent?.split(' ').shift();
-    els[i].innerHTML = `<span class="stellar-injected-readme-code-syntax-highlight">${firstWord}</span>${els[i].textContent?.split('').slice(firstWord?.length).join('')}`;
+
+    let firstWordIsCommand = false;
+    const validCommands = ['npm', 'yarn', 'pnpm', 'curl', 'git'];
+    for (let i = 0; i < validCommands.length; i++) {
+      if (firstWord === validCommands[i]) firstWordIsCommand = true;
+    }
+    if (firstWordIsCommand) els[i].innerHTML = `<span class="stellar-injected-readme-code-syntax-highlight">${firstWord}</span>${els[i].textContent?.split('').slice(firstWord?.length).join('')}`;
   }
 };
 
-addSyntaxHighlightReadMeCode(readmeCode1);
-addSyntaxHighlightReadMeCode(readmeCode2);
+setInterval(() => {
+  addSyntaxHighlightReadMeCode(readmeCode1);
+  addSyntaxHighlightReadMeCode(readmeCode2);
+}, 1000);
 
 const addImgToNavbar = () => {
   const navBar = document.querySelector('body > div.position-relative.js-header-wrapper > header > div.Header-item.Header-item--full.flex-column.flex-md-row.width-full.flex-order-2.flex-md-order-none.mr-0.mt-3.mt-md-0.Details-content--hidden-not-important.d-md-flex');
