@@ -3,6 +3,8 @@
   <h1>stellar theme for github</h1>
 </div>
 
+IMPORTANT: this is deprecated use github-stellar-theme-v2 (https://github.com/frog1123/github-stellar-theme-v2)
+
 recommend using with github 'Dark dimmed' (settings > appearance > theme)
 
 tested on
